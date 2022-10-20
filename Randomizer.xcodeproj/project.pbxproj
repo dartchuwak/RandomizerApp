@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A33B7F78290166F900E61172 /* generateRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B7F77290166F900E61172 /* generateRandom.swift */; };
+		A3568BA229018E7C003C8193 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3568BA129018E7C003C8193 /* MainViewController.swift */; };
+		A3568BA629018F3E003C8193 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3568BA529018F3E003C8193 /* ContentView.swift */; };
 		A3F3919A28F5B101000AE0CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3919928F5B101000AE0CA /* AppDelegate.swift */; };
 		A3F3919C28F5B101000AE0CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3919B28F5B101000AE0CA /* SceneDelegate.swift */; };
 		A3F3919E28F5B101000AE0CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3919D28F5B101000AE0CA /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		A33B7F77290166F900E61172 /* generateRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateRandom.swift; sourceTree = "<group>"; };
+		A3568BA129018E7C003C8193 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A3568BA529018F3E003C8193 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A3F3919628F5B101000AE0CA /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F3919928F5B101000AE0CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F3919B28F5B101000AE0CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,11 +73,13 @@
 				A33B7F76290166E500E61172 /* Model */,
 				A3F3919928F5B101000AE0CA /* AppDelegate.swift */,
 				A3F3919B28F5B101000AE0CA /* SceneDelegate.swift */,
+				A3568BA129018E7C003C8193 /* MainViewController.swift */,
 				A3F3919D28F5B101000AE0CA /* ViewController.swift */,
 				A3F3919F28F5B101000AE0CA /* Main.storyboard */,
 				A3F391A228F5B102000AE0CA /* Assets.xcassets */,
 				A3F391A428F5B102000AE0CA /* LaunchScreen.storyboard */,
 				A3F391A728F5B102000AE0CA /* Info.plist */,
+				A3568BA529018F3E003C8193 /* ContentView.swift */,
 			);
 			path = Randomizer;
 			sourceTree = "<group>";
@@ -151,7 +157,9 @@
 			files = (
 				A3F3919E28F5B101000AE0CA /* ViewController.swift in Sources */,
 				A33B7F78290166F900E61172 /* generateRandom.swift in Sources */,
+				A3568BA629018F3E003C8193 /* ContentView.swift in Sources */,
 				A3F3919A28F5B101000AE0CA /* AppDelegate.swift in Sources */,
+				A3568BA229018E7C003C8193 /* MainViewController.swift in Sources */,
 				A3F3919C28F5B101000AE0CA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

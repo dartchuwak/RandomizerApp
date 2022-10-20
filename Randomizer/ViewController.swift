@@ -59,6 +59,5 @@ class ViewController: UIViewController {
         
         resultLabel.text = random.generateRandomNumber()
     }
-    
 }
 
