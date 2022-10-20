@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A33B7F78290166F900E61172 /* generateRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = A33B7F77290166F900E61172 /* generateRandom.swift */; };
 		A3F3919A28F5B101000AE0CA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3919928F5B101000AE0CA /* AppDelegate.swift */; };
 		A3F3919C28F5B101000AE0CA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3919B28F5B101000AE0CA /* SceneDelegate.swift */; };
 		A3F3919E28F5B101000AE0CA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F3919D28F5B101000AE0CA /* ViewController.swift */; };
@@ -16,7 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A3F3919628F5B101000AE0CA /* MyDayApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyDayApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A33B7F77290166F900E61172 /* generateRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generateRandom.swift; sourceTree = "<group>"; };
+		A3F3919628F5B101000AE0CA /* Randomizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Randomizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3F3919928F5B101000AE0CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3F3919B28F5B101000AE0CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		A3F3919D28F5B101000AE0CA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -37,10 +39,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A33B7F76290166E500E61172 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A33B7F77290166F900E61172 /* generateRandom.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A3F3918D28F5B101000AE0CA = {
 			isa = PBXGroup;
 			children = (
-				A3F3919828F5B101000AE0CA /* MyDayApp */,
+				A3F3919828F5B101000AE0CA /* Randomizer */,
 				A3F3919728F5B101000AE0CA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,14 +58,15 @@
 		A3F3919728F5B101000AE0CA /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A3F3919628F5B101000AE0CA /* MyDayApp.app */,
+				A3F3919628F5B101000AE0CA /* Randomizer.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A3F3919828F5B101000AE0CA /* MyDayApp */ = {
+		A3F3919828F5B101000AE0CA /* Randomizer */ = {
 			isa = PBXGroup;
 			children = (
+				A33B7F76290166E500E61172 /* Model */,
 				A3F3919928F5B101000AE0CA /* AppDelegate.swift */,
 				A3F3919B28F5B101000AE0CA /* SceneDelegate.swift */,
 				A3F3919D28F5B101000AE0CA /* ViewController.swift */,
@@ -64,15 +75,15 @@
 				A3F391A428F5B102000AE0CA /* LaunchScreen.storyboard */,
 				A3F391A728F5B102000AE0CA /* Info.plist */,
 			);
-			path = MyDayApp;
+			path = Randomizer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A3F3919528F5B101000AE0CA /* MyDayApp */ = {
+		A3F3919528F5B101000AE0CA /* Randomizer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A3F391AA28F5B102000AE0CA /* Build configuration list for PBXNativeTarget "MyDayApp" */;
+			buildConfigurationList = A3F391AA28F5B102000AE0CA /* Build configuration list for PBXNativeTarget "Randomizer" */;
 			buildPhases = (
 				A3F3919228F5B101000AE0CA /* Sources */,
 				A3F3919328F5B101000AE0CA /* Frameworks */,
@@ -82,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = MyDayApp;
+			name = Randomizer;
 			productName = MyDayApp;
-			productReference = A3F3919628F5B101000AE0CA /* MyDayApp.app */;
+			productReference = A3F3919628F5B101000AE0CA /* Randomizer.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A3F3919128F5B101000AE0CA /* Build configuration list for PBXProject "MyDayApp" */;
+			buildConfigurationList = A3F3919128F5B101000AE0CA /* Build configuration list for PBXProject "Randomizer" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A3F3919528F5B101000AE0CA /* MyDayApp */,
+				A3F3919528F5B101000AE0CA /* Randomizer */,
 			);
 		};
 /* End PBXProject section */
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A3F3919E28F5B101000AE0CA /* ViewController.swift in Sources */,
+				A33B7F78290166F900E61172 /* generateRandom.swift in Sources */,
 				A3F3919A28F5B101000AE0CA /* AppDelegate.swift in Sources */,
 				A3F3919C28F5B101000AE0CA /* SceneDelegate.swift in Sources */,
 			);
@@ -290,7 +302,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UN5MX5RT64;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyDayApp/Info.plist;
+				INFOPLIST_FILE = Randomizer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Randomizer;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +336,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = UN5MX5RT64;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MyDayApp/Info.plist;
+				INFOPLIST_FILE = Randomizer/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Randomizer;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -349,7 +363,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A3F3919128F5B101000AE0CA /* Build configuration list for PBXProject "MyDayApp" */ = {
+		A3F3919128F5B101000AE0CA /* Build configuration list for PBXProject "Randomizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3F391A828F5B102000AE0CA /* Debug */,
@@ -358,7 +372,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A3F391AA28F5B102000AE0CA /* Build configuration list for PBXNativeTarget "MyDayApp" */ = {
+		A3F391AA28F5B102000AE0CA /* Build configuration list for PBXNativeTarget "Randomizer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A3F391AB28F5B102000AE0CA /* Debug */,

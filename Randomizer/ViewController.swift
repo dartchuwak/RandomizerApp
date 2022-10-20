@@ -11,18 +11,17 @@ import UIKit
 
 class ViewController: UIViewController {
     
-
+    let random = RandomNumber()
     @IBOutlet weak var toLabel: UILabel!
     @IBOutlet weak var fromLabel: UILabel!
     @IBOutlet weak var toSlider: UISlider!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var fromSlider: UISlider!
-    var fromNumber: Int = 0
-    var toNumber: Int = 100
     
     override func viewDidLoad() {
         super.viewDidLoad()
         becomeFirstResponder()
+        resultLabel.text = random.generateRandomNumber()
         
     }
     
@@ -32,7 +31,7 @@ class ViewController: UIViewController {
     
     override func motionBegan(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
         if motion == .motionShake{
-            resultLabel.text = String(Int.random(in: fromNumber...toNumber))
+            resultLabel.text = random.generateRandomNumber()
     }
     
         func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
@@ -44,8 +43,8 @@ class ViewController: UIViewController {
         if Int(toSlider.value) <= Int(fromSlider.value) {
             toSlider.value = fromSlider.value + 1
         }
-            toNumber = Int(toSlider.value)
-            toLabel.text = "\(toNumber)"
+        random.toNumber = Int(toSlider.value)
+        toLabel.text = "\(random.toNumber)"
 
     }
     
@@ -53,12 +52,12 @@ class ViewController: UIViewController {
         if Int(fromSlider.value) >= Int(toSlider.value) {
             fromSlider.value = toSlider.value - 1
         }
-        fromNumber = Int(fromSlider.value)
-        fromLabel.text = "\(fromNumber)"
+        random.fromNumber = Int(fromSlider.value)
+        fromLabel.text = "\(random.fromNumber)"
     }
     @IBAction func generateButton() {
         
-        resultLabel.text = String(Int.random(in: fromNumber...toNumber))
+        resultLabel.text = random.generateRandomNumber()
     }
     
 }
