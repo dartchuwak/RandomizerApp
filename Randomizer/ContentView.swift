@@ -8,42 +8,48 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var redComponent: Double = 0.5
-    @State var greenComponent: Double = 0.5
-    @State var blueComponent: Double = 0.5
-    
+    @State var hueValue: Double = 0.5
+    @State var saturationValue: Double = 1
+    @State var brightnesValue: Double = 1
     
     var body: some View {
         VStack(alignment: .center) {
-            Slider(value: $redComponent)
-            Slider(value: $greenComponent)
-            Slider(value: $blueComponent)
-            ZStack(alignment: .center){
-                Color(red: redComponent, green: greenComponent, blue: blueComponent).cornerRadius(50)
-                VStack(alignment: .center) {
-                    Text("R\(UInt(255 * redComponent))")
-                    Text("G\(UInt(255 * greenComponent))")
-                    Text("B\(UInt(255 * blueComponent))")
-                    Button(action: {
-                        redComponent = Double.random(in: 0...1)
-                        greenComponent = Double.random(in: 0...1)
-                        blueComponent = Double.random(in: 0...1)
-                    })
-                    { Text("New color")
-                            .padding()
-                            .background(Color.gray)
-                            .foregroundColor(.black)
-                            .cornerRadius(45)
-                    }
-                    Text("\(String(format: "%02X",(UInt(255 * redComponent))))\(String(format: "%02X",(UInt(255 * greenComponent))))\(String(format: "%02X",(UInt(255 * blueComponent))))")
+            Text("Hue")
+            Slider(value: $hueValue)
+            Text("Saturation")
+            Slider(value: $saturationValue)
+            Text("Brightness")
+            Slider(value: $brightnesValue)
+            HStack(alignment: .center) {
+                Button(action: {hueValue = Double.random(in: 0...1)})
+                { Text("")
+                        .frame(width: 179, height: 180)
+                        .background(Color(hue: hueValue, saturation: saturationValue, brightness: brightnesValue))
+                        .cornerRadius(45)
                 }
-            }.padding(20).padding(.bottom, 100)
-            Button(action: {
-            })
-            {Text("Back")}
-        }
+                Button(action: {hueValue = Double.random(in: 0...1)})
+                { Text("")
+                        .frame(width: 179, height: 180)
+                        .background(Color(hue: hueValue, saturation: saturationValue, brightness: brightnesValue)).hueRotation(Angle(degrees: 180))
+                        .cornerRadius(45)
+                }
+            }
+            
+            Rectangle()
+                .frame(width: 368, height: 90, alignment: .center)
+                .foregroundColor(Color(hue: hueValue, saturation: saturationValue, brightness: brightnesValue))
+                .cornerRadius(45)
+            Rectangle()
+                .frame(width: 368, height: 90, alignment: .center)
+                .foregroundColor(Color(hue: hueValue, saturation: saturationValue, brightness: brightnesValue)).hueRotation(Angle(degrees: 120))
+                .cornerRadius(45)
+            Rectangle()
+                .frame(width: 368, height: 90, alignment: .center)
+                .foregroundColor(Color(hue: hueValue, saturation: saturationValue, brightness: brightnesValue)).hueRotation(Angle(degrees: 240))
+                .cornerRadius(45)
+            
+        }.padding(20)
     }
-    
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
