@@ -75,11 +75,11 @@
 				A3F3919B28F5B101000AE0CA /* SceneDelegate.swift */,
 				A3568BA129018E7C003C8193 /* MainViewController.swift */,
 				A3F3919D28F5B101000AE0CA /* ViewController.swift */,
+				A3568BA529018F3E003C8193 /* ContentView.swift */,
 				A3F3919F28F5B101000AE0CA /* Main.storyboard */,
 				A3F391A228F5B102000AE0CA /* Assets.xcassets */,
 				A3F391A428F5B102000AE0CA /* LaunchScreen.storyboard */,
 				A3F391A728F5B102000AE0CA /* Info.plist */,
-				A3568BA529018F3E003C8193 /* ContentView.swift */,
 			);
 			path = Randomizer;
 			sourceTree = "<group>";

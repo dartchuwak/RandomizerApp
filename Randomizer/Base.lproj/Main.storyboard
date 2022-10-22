@@ -33,9 +33,9 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e3f-2T-jhs">
                                 <rect key="frame" x="57" y="652" width="300" height="50"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Random color">
+                                <buttonConfiguration key="configuration" style="plain" title="Random color" titleAlignment="center">
                                     <backgroundConfiguration key="background" cornerRadius="45" strokeWidth="6">
                                         <color key="strokeColor" systemColor="linkColor"/>
                                     </backgroundConfiguration>
